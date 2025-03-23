@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="res"></div>
+    <button type="button" onclick="collectData(1)">1</button>
+    <button type="button" onclick="collectData(2)">2</button>
+    <button type="button" onclick="collectData(3)">3</button>
+    <button type="button" onclick="collectData(4)">4</button>
+    <button type="button" onclick="clearData()">Clear</button>
+    
+<script>
+    let data=""
+    function collectData(nasif){
+        data += nasif
+
+        document.getElementById('res').innerHTML=data;
+    }
+
+    function clearData(){
+        data="";
+        document.getElementById('res').innerHTML=data;
+    }
+</script>
+
+</body>
+</html>
